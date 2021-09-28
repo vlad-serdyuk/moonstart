@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+## Moonshot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project for viewing launches.
 
-## Available Scripts
+## How to set up:
 
-In the project directory, you can run:
+To start the app you need to clone repository to your local machine.
 
-### `yarn start`
+Then you need to install modules:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`yarn install`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For running app:
 
-### `yarn test`
+`yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For running tests:
 
-### `yarn build`
+`yarn test`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech stack:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As a main framework: `React`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React was chosen because of flexibility and its lightweight.
 
-### `yarn eject`
+As a language: `Typescript`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Typescript provides a strict type mode that allows us to avoid typed mistakes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For testing:
+- `Jest`
+- `Enzyme`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Jest is a powerful library that provides a lot of utils methods out of the box.
+Enzyme provides easy way to get shallow/mounted copy of React component.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For displaying map:
+`google-maps-react`
 
-## Learn More
+Google maps is a standart in industry. This library provides an easy react-wrapper for google maps.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For date range picker: 
+`@wojtekmaj/react-daterange-picker`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+react-daterange-picker provides easy mechanism with less code to integrate Date Picker into the app. 
+
+## How would I improve my solution:
+
+I have not done a point selection.
+
+I have not done displaying launches agencies.
+
+I have not done filtering launches based on they were successful.
+
+I would provide more types, especially for launches response type.
+Also I would apply more styles to make it more UI attractive.
+I would add more tests to components and for service.
